@@ -1,2 +1,20 @@
+kezdő képernyő:
 regisztráció: az alkalmazásba be lehet regisztrálni, név, emailcím és jelszó megadásával
 bejelentkezés: az alkalmazásba be lehet jelentkezni egy meglévő felhasználói fiókkal
+kijelentkezés: a bejelejelentkezett felhasználó a fiókból kijelentkezhet
+felhasználói profil beállítások: a bejelentkezett felhasználó szerkesztheti a saját profilját
+    egy kép URL-jét belliesztheti, megváltoztathatja a nevét, írhat magáról egy rövid bio-t,
+    megváltoztathatja az emailcímét. A változtatásokat jelszó megadásával kell megerősítenie.
+poszt létrehozása: egy meglévő felhasználói fiókkal bejelentkezve létre hozhat posztot cím, alcím és szöveg beírásával
+poszt szerkesztése: egy meglévő felhasználói fiókkal bejelentkezve a korábban a felhasználó által létrehozott posztot szerkesztheti
+poszt tagelése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó által létrehozott poszthoz tageket adhat
+poszt törlése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó által létrehozott posztot törölheti
+poszt megtekintése: az alkalmazásba feltöltött posztot meg lehet tekinteni
+tagek alapján posztok listázása: az alkalmazásba feltöltött posztok listázhatók a hozzájuk adott tagek szerint
+poszt kedvelése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó a más felhasználó által létrehozott posztot kedvelheti
+posztok listájának lapozása 10-esével: az alkalmazásba feltöltött posztok listája lapozható 10-esével
+más szerzők követése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó a más olyan felhasználót követhet, akinek van posztja
+your feed:
+global feed:
+népszerű tagek megjelenítése:
+
