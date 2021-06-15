@@ -6,14 +6,14 @@ felhasználói profil beállítások: a bejelentkezett felhasználó szerkeszthe
     egy kép URL-jét belliesztheti, megváltoztathatja a nevét, írhat magáról egy rövid bio-t,
     megváltoztathatja az emailcímét. A változtatásokat jelszó megadásával kell megerősítenie.
 poszt létrehozása: egy meglévő felhasználói fiókkal bejelentkezve létre hozhat posztot cím, alcím és szöveg beírásával
-poszt szerkesztése: egy meglévő felhasználói fiókkal bejelentkezve a korábban a felhasználó által létrehozott posztot szerkesztheti
-poszt tagelése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó által létrehozott poszthoz tageket adhat
-poszt törlése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó által létrehozott posztot törölheti
-poszt megtekintése: az alkalmazásba feltöltött posztot meg lehet tekinteni
+poszt szerkesztése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó az általa létrehozott posztot szerkesztheti
+poszt tagelése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó az általa létrehozott poszthoz tageket adhat
+poszt törlése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó az általa létrehozott posztot törölheti
+posztok megtekintése: az alkalmazásba feltöltött posztokat meg lehet tekinteni
 tagek alapján posztok listázása: az alkalmazásba feltöltött posztok listázhatók a hozzájuk adott tagek szerint
-poszt kedvelése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó a más felhasználó által létrehozott posztot kedvelheti
+poszt kedvelése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó a más felhasználók által létrehozott posztokat kedvelheti
 posztok listájának lapozása 10-esével: az alkalmazásba feltöltött posztok listája lapozható 10-esével
-más szerzők követése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó a más olyan felhasználót követhet, akinek van posztja
+más szerzők követése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó más olyan felhasználókat követhet, akiknek van legalább egy posztja
 your feed:
 global feed:
 népszerű tagek megjelenítése:
