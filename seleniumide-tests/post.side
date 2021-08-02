@@ -1,1 +1,181 @@
-
+{
+  "id": "599766d7-3649-4c48-9ff3-b95ebba73c3b",
+  "version": "2.0",
+  "name": "conduit",
+  "url": "http://localhost:1667",
+  "tests": [{
+    "id": "3d7a4f1d-b902-453f-8777-f1bd94c842d9",
+    "name": "create_new_post",
+    "commands": [{
+      "id": "25665e0d-a453-4775-b84a-6666f553756a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4f2a088-57d9-433a-b747-cbeb36a86407",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5048edee-ed1d-4876-aa52-64f6d3aef8b9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Article",
+      "targets": [
+        ["linkText=New Article", "linkText"],
+        ["css=.navbar-nav > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'New Article')]", "xpath:link"],
+        ["xpath=//div[@id='app']/nav/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/editor')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' New Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4630a932-02b2-4a4d-8741-e29e3e7007a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Publish Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "316bb9c0-adb1-4faa-b788-0d790ca105f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal-button",
+      "targets": [
+        ["css=.swal-button", "css:finder"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33144060-e397-4b20-87b0-2f7de1fa3662",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control-lg",
+      "targets": [
+        ["css=.form-control-lg", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/form/fieldset/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fb60ccd-dfc0-4b60-804c-ea23a27aad19",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control-lg",
+      "targets": [
+        ["css=.form-control-lg", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/form/fieldset/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Lorem Ipsum"
+    }, {
+      "id": "062f8333-e06b-409f-963c-91a464f1218b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/form/fieldset/fieldset[2]/input", "xpath:idRelative"],
+        ["xpath=//fieldset[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f8dd1df-c529-4453-98f2-e30a77d4f241",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/form/fieldset/fieldset[2]/input", "xpath:idRelative"],
+        ["xpath=//fieldset[2]/input", "xpath:position"]
+      ],
+      "value": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…"
+    }, {
+      "id": "091793b9-4bce-4d1c-bb99-43fac17da31e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(3) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/form/fieldset/fieldset[3]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5711f9f5-365b-4f26-aa82-b96a38a4023f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(3) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/form/fieldset/fieldset[3]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies mollis porta. Sed imperdiet ornare tortor, vel vulputate odio pretium vitae. Vivamus non ligula venenatis neque rutrum auctor. Suspendisse neque metus, tincidunt id nunc vitae, fermentum molestie neque. Nullam elementum efficitur nulla a bibendum. Nullam blandit non ipsum non dapibus. In vehicula eget sem non suscipit. Duis suscipit, ipsum at euismod luctus, nulla tellus lacinia arcu, sit amet ornare lectus leo vitae leo. Nunc rutrum convallis urna vitae sagittis. Ut lorem turpis, ultricies ac feugiat ut, imperdiet ac eros.\\n\\nIn congue auctor justo, quis dignissim mi. Sed scelerisque interdum ullamcorper. Pellentesque euismod consectetur erat sed tempor. Fusce ac odio et justo tincidunt finibus. Maecenas sed quam a risus varius auctor iaculis quis magna. Aenean vitae pulvinar massa, at sollicitudin ante. Suspendisse ut justo at est maximus molestie. Phasellus urna est, sodales dapibus maximus eu, malesuada vitae nunc. Quisque scelerisque faucibus commodo. Vivamus eleifend posuere euismod. Aenean commodo quam turpis. Aliquam egestas metus eget fringilla varius.\\n\\nCras accumsan vehicula lacus vitae eleifend. Fusce faucibus enim eu sagittis laoreet. Fusce vel erat nec purus luctus fermentum. Mauris ac dui pretium, consectetur nisl id, hendrerit lectus. Integer in sem sollicitudin, vulputate eros eget, tristique diam. Mauris volutpat tincidunt erat, vel tempus purus venenatis et. Nam sed nulla quis turpis dapibus aliquam. In eget accumsan est. Ut quam lectus, tincidunt sed luctus ut, sodales at leo. Duis tempor fringilla lacus, quis facilisis nulla faucibus sed. Vivamus at elementum libero. Maecenas in libero eget nulla dictum ultrices. Etiam lobortis leo a lorem finibus mollis ac quis urna. Etiam a lacus congue, cursus diam eu, aliquam justo.\\n\\nNam ipsum lacus, interdum vel rutrum pulvinar, malesuada in turpis. Quisque suscipit et arcu eu cursus. Ut consequat sem id lacus lobortis suscipit. Nulla ac rhoncus est. Nullam sed congue elit. Curabitur augue libero, pellentesque non dictum vitae, bibendum vel lacus. Cras congue felis a elit egestas tempus. Vivamus finibus est mi, eu ullamcorper neque sollicitudin quis.\\n\\nUt sed nibh orci. Aenean est urna, pellentesque id facilisis eget, dictum eu lectus. Fusce condimentum nec lorem ac fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque facilisis leo nec felis sagittis congue. Aenean vel scelerisque ligula, non cursus magna. Nunc venenatis mollis risus eu fermentum. In sodales lectus accumsan mi tempus blandit. Sed laoreet mauris id arcu lacinia feugiat. Suspendisse semper ipsum massa, sit amet tincidunt odio imperdiet in. Donec a venenatis nibh, non suscipit ligula."
+    }, {
+      "id": "5fe5d3be-7b04-4f00-b59b-1d8a3906081e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ti-new-tag-input",
+      "targets": [
+        ["css=.ti-new-tag-input", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/form/fieldset/fieldset[4]/div/div/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8ce9ec3-f3f9-4f80-88ba-7d48298de3c8",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ti-new-tag-input",
+      "targets": [
+        ["css=.ti-new-tag-input", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/form/fieldset/fieldset[4]/div/div/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "Mese"
+    }, {
+      "id": "303baa18-42ae-4b27-b379-0f124c649c5d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Publish Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "07252f23-3001-4812-9793-20e080d32bd7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:1667/"],
+  "plugins": []
+}

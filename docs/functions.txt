@@ -1,20 +1,21 @@
-kezdő képernyő:
-regisztráció: az alkalmazásba be lehet regisztrálni, név, emailcím és jelszó megadásával
-bejelentkezés: az alkalmazásba be lehet jelentkezni egy meglévő felhasználói fiókkal
-kijelentkezés: a bejelejelentkezett felhasználó a fiókból kijelentkezhet
-felhasználói profil beállítások: a bejelentkezett felhasználó szerkesztheti a saját profilját
-    egy kép URL-jét belliesztheti, megváltoztathatja a nevét, írhat magáról egy rövid bio-t,
+R000 kezdő képernyő: az alkalmazás főoldala
+R001 regisztráció: az alkalmazásba be lehet regisztrálni, név, emailcím és jelszó megadásával
+R002 bejelentkezés: az alkalmazásba be lehet jelentkezni egy meglévő felhasználói fiókkal
+R003 kijelentkezés: a bejelejelentkezett felhasználó a fiókból kijelentkezhet
+R004 más szerzők követése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó más olyan felhasználókat követhet, akiknek van legalább egy posztja. ezek a your feed oldalon jelennek meg kilistázva
+R005 poszt létrehozása: egy meglévő felhasználói fiókkal bejelentkezve létre hozhat posztot cím, alcím és szöveg beírásával
+R006 posztok megtekintése: az alkalmazásba feltöltött posztokat meg lehet tekinteni
+R007 poszt szerkesztése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó az általa létrehozott posztot szerkesztheti
+R008 poszt törlése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó az általa létrehozott posztot törölheti
+R009 poszt kedvelése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó a más felhasználók által létrehozott posztokat kedvelheti
+R010 posztok listájának lapozása 10-esével: az alkalmazásba feltöltött posztok listája lapozható 10-esével
+R011 global feed: egy meglévő felhasználói fiókkal bejelentkezve az összes felhasználó posztja jelenik meg kilistázva
+R012 poszt tagelése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó az általa létrehozott poszthoz tageket adhat
+R013 tag törlése posztból: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó az általa létrehozott posztból tag-et törölhet
+R014 népszerű tagek alapján posztok listázása: az alkalmazásba feltöltött posztok listázhatók a hozzájuk adott tagek szerint
+R015 felhasználói profil beállítások: a bejelentkezett felhasználó szerkesztheti a saját profilját
+    egy kép URL-jét belliesztheti, megváltoztathatja a nevét, emailcímét írhat magáról egy rövid bio-t,
     megváltoztathatja az emailcímét. A változtatásokat jelszó megadásával kell megerősítenie.
-poszt létrehozása: egy meglévő felhasználói fiókkal bejelentkezve létre hozhat posztot cím, alcím és szöveg beírásával
-poszt szerkesztése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó az általa létrehozott posztot szerkesztheti
-poszt tagelése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó az általa létrehozott poszthoz tageket adhat
-poszt törlése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó az általa létrehozott posztot törölheti
-posztok megtekintése: az alkalmazásba feltöltött posztokat meg lehet tekinteni
-tagek alapján posztok listázása: az alkalmazásba feltöltött posztok listázhatók a hozzájuk adott tagek szerint
-poszt kedvelése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó a más felhasználók által létrehozott posztokat kedvelheti
-posztok listájának lapozása 10-esével: az alkalmazásba feltöltött posztok listája lapozható 10-esével
-más szerzők követése: egy meglévő felhasználói fiókkal bejelentkezve a felhasználó más olyan felhasználókat követhet, akiknek van legalább egy posztja
-your feed:
-global feed:
-népszerű tagek megjelenítése:
+R016 kommentelés: egy meglévő felhasználói fiókkal bejelentkezve lehetőség van a bejegyzésekhez hozzászólni
+R017 cookie kezelés: az oldal látogatója megtekintheti a cookie kezelési tájékoztatót és az abban leírtakat el kell fogadnia, vagy el kell utasítania
 

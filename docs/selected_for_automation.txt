@@ -1,11 +1,44 @@
-PL:
+A001, TC-0001 Kezdő képernyő belépés nélkül, felület automatizázás, mert ismételt végrehajtást tartalmaz
+A002, TC-0002 Regisztráció helyes adatokkal, felület automatizázás, mert ismételt végrehajtást tartalmaz
+A003, TC-0006 Regisztráció nem valid emailcímmel, felület automatizázás, ismételt végrehajtás a regressziós tesztekhez 
+A004, TC-0010 Bejelentkezés helyes adatokkal, felület automatizázás, mert ismételt végrehajtást tartalmaz
+A005, TC-0003 Kijelentkezés, felület automatizázás, mert ismételt végrehajtást tartalmaz
+A006, TC-0015 Új poszt létrehozása minden mező helyes adatokkal való kitöltésével, felület automatizázás, mert ismételt végrehajtást tartalmaz
+A007, TC-0025 Bejegyzések listájának megtekintése, felület automatizázás, mert ismételt végrehajtást tartalmaz
+A008, TC-0026 Bejegyzések megtekintése, felület automatizázás, mert ismételt végrehajtást tartalmaz
+A009, TC-0036 Saját profil szerkesztése, emailcím csere, felület automatizázás, ismételt végrehajtás a regressziós tesztekhez 
+A010, TC-0034 Saját profil szerkesztése, képcsere, felület automatizázás, a regressziós tesztekhez
+A011, TC-0035 Saját profil szerkesztése, felhasználónév csere, felület automatizázás, a regressziós tesztekhez
+A012, TC-0025 Bejegyzések listájának megtekintése
+A013, TC-0026 Bejegyzések lapozása 10-esével, felület automatizázás, mert ismételt végrehajtást tartalmaz
+A014, TC-0021 Saját poszt szerkesztése, felület automatizázás, mert ismételt végrehajtást tartalmaz
+A015, TC-0024 Saját poszt törlése, felület automatizázás, mert ismételt végrehajtást tartalmaz
+A016, TC-0022 Tag hozzáadása saját poszthoz, felület automatizázás, mert ismételt végrehajtást tartalmaz
+A017, TC-0023 Tag törlése saját posztból, felület automatizázás, mert ismételt végrehajtást tartalmaz
+A018, TC-0033 Népszerű tagek alapján posztok listázása, felület automatizázás, mert ismételt végrehajtást tartalmaz
+A019, TC-0032 Kommentelés, felület automatizázás, mert ismételt végrehajtást tartalmaz
+A020, TC-0007 Regisztráció jelszó megadása nélkül, felület automatizázás, a regressziós tesztekhez 
+A021, TC-0008 Regisztráció adatok nélkül, felület automatizázás, a regressziós tesztekhez 
+A022, TC-0009 Regisztráció már regisztrált adatokkal, felület automatizázás, a regressziós tesztekhez 
+A023, TC-0011 Bejelentkezés nem valid emailcímmel, felület automatizázás, a regressziós tesztekhez 
+A024, TC-0012 Bejelentkezés jelszó nélkül, felület automatizázás, a regressziós tesztekhez 
+A025, TC-0013 Bejelentkezés adatok nélkül, felület automatizázás, a regressziós tesztekhez 
+A026, TC-0014 Bejelentkezés nem összetartozó email-jelszó párossal, felület automatizázás, a regressziós tesztekhez 
+A027, TC-0017 Új poszt létrehozása üres write your article mezővel, felület automatizázás, a regressziós tesztekhez
+A028, TC-0037 Cookie kezelés elfogadása, felület automatizálás
 
-A001,CON_TC_004_login, felület automatizázás, mert ismételt végrehajtást tartalmaz
-...
-Ahol:
+Manuálisan nem tesztelt esetek, melyek a vizsgakövetelmény részei:
+A029 Adatok lementése felületről
 
-A001 azt jelenti, hogy ezt automatizálod elsőnek, tehát sorszám.
-CON_TC_004_login az eredeti manuális teszteset azonosítója
-felület automatizázás | API teszt | egyéb teszt egyike a felsoroltaknak
-a legutolsó elem a szöveges magyarázat, lehetőleg egy mondatban.
-Minden tesztesetre reagálj. Az is válasz, ha azt írod, hogy nem automatizálható, mert ...
+
+Amiket nem automatizálnék:
+
+TC-0004 Regisztráció nem valid emailcímmel, az A003,TC-0006 bőven elegendő a teszteléséhez
+TC-0005 Regisztráció nem valid emailcímmel, az A003,TC-0006 bőven elegendő a teszteléséhez
+TC-0028 Más szerző követése, manuális felületteszteléssel gyors és hatékony
+TC-0029 Más szerző követésének leállítása, manuális felületteszteléssel gyors és hatékony
+TC-0016 Új poszt létrehozása üres tag mezővel, 
+TC-0020 Új poszt létrehozása üres beviteli mezőkkel, a cím kötelező mező, így nem éri meg energiát fektetni bele
+TC-0030 Poszt kedvelése, manuális felületteszteléssel gyors és hatékony
+TC-0031 Poszt kedvelésének visszavonása, manuális felületteszteléssel gyors és hatékony
+

@@ -1,1 +1,37 @@
-
+R000 kezdő képernyő TC-0001 Kezdő képernyő belépés nélkül
+R001 regisztráció TC-0002 Regisztráció helyes adatokkal
+		  TC-0004 Regisztráció nem valid emailcímmel
+		  TC-0005 Regisztráció nem valid emailcímmel
+		  TC-0006 Regisztráció nem valid emailcímmel
+		  TC-0007 Regisztráció jelszó megadása nélkül
+		  TC-0008 Regisztráció adatok nélkül
+		  TC-0009 Regisztráció már regisztrált adatokkal
+R002 bejelentkezés TC-0010 Bejelentkezés helyes adatokkal
+		   TC-0011 Bejelentkezés nem valid emailcímmel
+		   TC-0012 Bejelentkezés jelszó nélkül
+		   TC-0013 Bejelentkezés adatok nélkül
+		   TC-0014 Bejelentkezés nem összetartozó email-jelszó párossal
+R003 kijelentkezés TC-0003 Kijelentkezés
+R004 más szerzők követése TC-0028 Más szerző követése
+		 	  TC-0029 Más szerző követésének leállítása
+R005 poszt létrehozása TC-0015 Új poszt létrehozása minden mező helyes adatokkal való kitöltésével
+		       TC-0016 Új poszt létrehozása üres tag mezővel
+		       TC-0017 Új poszt létrehozása üres write your article mezővel
+		       TC-0018 Új poszt létrehozása üres what's this article about mezővel
+		       TC-0019 Új poszt létrehozása üres article title mezővel
+		       TC-0020 Új poszt létrehozása üres beviteli mezőkkel
+R006 posztok megtekintése TC-0026 Bejegyzések megtekintése
+R007 poszt szerkesztése TC-0021 Saját poszt szerkesztése
+R008 poszt törlése TC-0024 Saját poszt törlése
+R009 poszt kedvelése TC-0030 Poszt kedvelése
+		     TC-0031 Poszt kedvelésének visszavonása
+R010 posztok listájának lapozása 10-esével TC-0026 Bejegyzések lapozása 10-esével
+R011 global feed TC-0025 Bejegyzések listájának megtekintése
+R012 poszt tagelése TC-0022 Tag hozzáadása saját poszthoz
+R013 tag törlése posztból TC-0023 Tag törlése saját posztból
+R014 népszerű tagek alapján posztok listázása TC-0033 Népszerű tagek alapján posztok listázása
+R015 felhasználói profil beállítások TC0034 Saját profil szerkesztése, képcsere
+				     TC0035 Saját profil szerkesztése, felhasználónév csere
+				     TC0036 Saját profil szerkesztése, emailcím csere
+R016 kommentelés TC-0032 Kommentelés
+R017 cookie kezelés TC-0037 Cookie kezelés elfogadása
