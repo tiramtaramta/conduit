@@ -14,13 +14,11 @@ def test_logout():
     driver.get("http://localhost:1667/#/")
 
     basic_registration(driver)
-    time.sleep(3)
     log_out_btn = find_element(driver, By.XPATH, "//a[@active-class='active' AND @class='nav-link')]")
     log_out_btn.click()
-    time.sleep(2)
 
     # Kijelentkezés tényének ellenőrzése
-    sign_out_check = driver.find_element_by_xpath("//a[starts-with(@href, '#/login')]").text
+    sign_out_check = find_element(driver, By.XPATH, "//a[starts-with(@href, '#/login')]").text
     assert sign_out_check == f"{sign_out_check}", f"Test Failed: User is logged in."
 
     driver.quit()
