@@ -20,16 +20,6 @@ def test_login():
 
     driver.find_element_by_xpath("//a[@href='#/login']").click()
 
-    # Automata regisztrációval létrejött felhasználók beolvasása
-    with open('docs/testcases/registered_users.csv') as users_file:
-        csv_reader = csv.reader(users_file, delimiter=';')
-        for row in csv_reader:
-            users_list = row
-
-    # Random felhasználó kiválasztása a bejelentkezéshez
-    random_user_index = random.randint(0, len(users_list) - 1)
-    random_user_name = users_list[random_user_index]
-#     user_input_data = [random_user_name, f"{random_user_name}@hotmail.com", "Userpass1"]
     user_input_data = ["user200", "user200@hotmail.com", "Userpass1"]
 
     # Bejelentkezési űrlap feltöltése
@@ -43,6 +33,6 @@ def test_login():
     time.sleep(2)
 
     # Bejelentkezés tényének ellenőrzése
-    username_check = find_element(driver, By.XPATH, "//a[@class='nav-link'] AND [starts-with(@href, '#/@')]")
-    assert username_check.text == user_input_data[0], f"Test Failed: User is not logged in ({user_input_data[0]})."
+    username_check = driver.find_element_by_xpath("//a[@class='nav-link'][starts-with(@href, '#/@')]").text
+    assert username_check == user_input_data[0], f"Test Failed: User is not logged in ({user_input_data[0]})."
     driver.quit()
