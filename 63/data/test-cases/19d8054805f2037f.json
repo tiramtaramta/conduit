@@ -1,0 +1,83 @@
+{
+  "uid" : "19d8054805f2037f",
+  "name" : "test_login",
+  "fullName" : "docs.testcases.test_login#test_login",
+  "historyId" : "3b63c183167f46b5730a46d06556452c",
+  "time" : {
+    "start" : 1628110356678,
+    "stop" : 1628110364164,
+    "duration" : 7486
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: __init__() takes 2 positional arguments but 4 were given",
+  "statusTrace" : "def test_login():\n        browser_options = Options()\n        browser_options.headless = True\n        driver = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)\n        driver.get(\"http://localhost:1667/#/\")\n    \n        time.sleep(2)\n    \n    \n        driver.find_element_by_xpath(\"//a[@href='#/login']\").click()\n    \n        # Automata regisztrációval létrejött felhasználók beolvasása\n        with open('docs/testcases/registered_users.csv') as users_file:\n            csv_reader = csv.reader(users_file, delimiter=';')\n            for row in csv_reader:\n                users_list = row\n    \n        # Random felhasználó kiválasztása a bejelentkezéshez\n        random_user_index = random.randint(0, len(users_list) - 1)\n        random_user_name = users_list[random_user_index]\n    #     user_input_data = [random_user_name, f\"{random_user_name}@hotmail.com\", \"Userpass1\"]\n        user_input_data = [\"user200\", \"user200@hotmail.com\", \"Userpass1\"]\n    \n        # Bejelentkezési űrlap feltöltése\n        for i in range(len(user_input_data) - 1):\n            driver.find_element_by_xpath(f\"//fieldset[{i + 1}]/input\").send_keys(user_input_data[i + 1])\n    \n        time.sleep(1)\n    \n        driver.find_element_by_tag_name(\"button\").click()\n    \n        time.sleep(2)\n    \n        # Bejelentkezés tényének ellenőrzése\n>       username_check = find_element(driver, By.XPATH, \"//a[@class='nav-link'] AND [starts-with(@href, '#/@')]\")\n\ndocs/testcases/test_login.py:46: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"8b11c40b20948e695a66896d19fdfcbd\")>\nsearch_type = 'xpath'\nvalue = \"//a[@class='nav-link'] AND [starts-with(@href, '#/@')]\"\n\n    def find_element(driver, search_type, value):\n>       element = WebDriverWait(driver, 10).until(EC.visibility_of_element_located(driver, search_type, value))\nE       TypeError: __init__() takes 2 positional arguments but 4 were given\n\ndocs/testcases/basic_function.py:8: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "TypeError: __init__() takes 2 positional arguments but 4 were given",
+    "statusTrace" : "def test_login():\n        browser_options = Options()\n        browser_options.headless = True\n        driver = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)\n        driver.get(\"http://localhost:1667/#/\")\n    \n        time.sleep(2)\n    \n    \n        driver.find_element_by_xpath(\"//a[@href='#/login']\").click()\n    \n        # Automata regisztrációval létrejött felhasználók beolvasása\n        with open('docs/testcases/registered_users.csv') as users_file:\n            csv_reader = csv.reader(users_file, delimiter=';')\n            for row in csv_reader:\n                users_list = row\n    \n        # Random felhasználó kiválasztása a bejelentkezéshez\n        random_user_index = random.randint(0, len(users_list) - 1)\n        random_user_name = users_list[random_user_index]\n    #     user_input_data = [random_user_name, f\"{random_user_name}@hotmail.com\", \"Userpass1\"]\n        user_input_data = [\"user200\", \"user200@hotmail.com\", \"Userpass1\"]\n    \n        # Bejelentkezési űrlap feltöltése\n        for i in range(len(user_input_data) - 1):\n            driver.find_element_by_xpath(f\"//fieldset[{i + 1}]/input\").send_keys(user_input_data[i + 1])\n    \n        time.sleep(1)\n    \n        driver.find_element_by_tag_name(\"button\").click()\n    \n        time.sleep(2)\n    \n        # Bejelentkezés tényének ellenőrzése\n>       username_check = find_element(driver, By.XPATH, \"//a[@class='nav-link'] AND [starts-with(@href, '#/@')]\")\n\ndocs/testcases/test_login.py:46: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"8b11c40b20948e695a66896d19fdfcbd\")>\nsearch_type = 'xpath'\nvalue = \"//a[@class='nav-link'] AND [starts-with(@href, '#/@')]\"\n\n    def find_element(driver, search_type, value):\n>       element = WebDriverWait(driver, 10).until(EC.visibility_of_element_located(driver, search_type, value))\nE       TypeError: __init__() takes 2 positional arguments but 4 were given\n\ndocs/testcases/basic_function.py:8: TypeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3b0c6aa644ee7492",
+      "name" : "log",
+      "source" : "3b0c6aa644ee7492.txt",
+      "type" : "text/plain",
+      "size" : 344
+    }, {
+      "uid" : "3f0749550a2f38d",
+      "name" : "stderr",
+      "source" : "3f0749550a2f38d.txt",
+      "type" : "text/plain",
+      "size" : 215
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "docs.testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "host",
+    "value" : "fv-az81-527"
+  }, {
+    "name" : "thread",
+    "value" : "3722-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "docs.testcases.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "19d8054805f2037f.json",
+  "parameterValues" : [ ]
+}
