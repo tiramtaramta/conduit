@@ -1,0 +1,134 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[starts-with(@href, '#/@')]\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_global_feed_list",
+        "uid" : "be7586945023e3c2",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628083281968,
+          "stop" : 1628083301916,
+          "duration" : 19948
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_create_post",
+        "uid" : "d668d23bb42097f1",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628083307780,
+          "stop" : 1628083315809,
+          "duration" : 8029
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_create_posts",
+        "uid" : "de5905910209d981",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628083315848,
+          "stop" : 1628083323859,
+          "duration" : 8011
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_delete_post",
+        "uid" : "b8bcae1389e9d803",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628083323902,
+          "stop" : 1628083331924,
+          "duration" : 8022
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_edit_settings",
+        "uid" : "6c58089e4a069b06",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628083331964,
+          "stop" : 1628083338954,
+          "duration" : 6990
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_export_my_last_post",
+        "uid" : "ee86e9a211d93367",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628083338996,
+          "stop" : 1628083347040,
+          "duration" : 8044
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_logout",
+        "uid" : "48f0c0ed99648770",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628083350899,
+          "stop" : 1628083358917,
+          "duration" : 8018
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_global_feed_pagination",
+        "uid" : "7128090df27951b3",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628083358954,
+          "stop" : 1628083366972,
+          "duration" : 8018
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "67ff07f2d312c49eda254d2554a7d99e"
+    }, {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'registered_users.csv'",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "f42175803bfab318",
+        "parentUid" : "eece2d1ad1426fcfab81dcff3ce01d2d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628083347082,
+          "stop" : 1628083350890,
+          "duration" : 3808
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "eece2d1ad1426fcfab81dcff3ce01d2d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
