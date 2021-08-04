@@ -1,0 +1,22 @@
+{
+  "8b9dd78a37ed5527226bf8fef2870651" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4f58f7e4d02b0baa",
+      "reportUrl" : "https://tiramtaramta.github.io/conduit/1//#testresult/4f58f7e4d02b0baa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628077127067,
+        "stop" : 1628077163492,
+        "duration" : 36425
+      }
+    } ]
+  }
+}
