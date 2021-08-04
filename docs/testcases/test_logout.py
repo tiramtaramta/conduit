@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 import time
-from data import login
+from data import login, find_element
 
 
 # -------- A005, TC-0003 Kijelentkezés --------
@@ -13,8 +13,12 @@ def test_logout():
     driver.get("http://localhost:1667/#/")
     
     login(driver)
-    time.sleep(5)
-    driver.find_element_by_xpath("//a[@active-class='active']").click()
+    element = find_element(driver, By.XPATH, '//a[@active-class="active"]')
+    element.click()
+    
+
+#     time.sleep(5)
+#     driver.find_element_by_xpath("//a[@active-class='active']").click()
 
 
     # Kijelentkezés tényének ellenőrzése
