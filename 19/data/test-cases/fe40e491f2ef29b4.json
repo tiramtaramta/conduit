@@ -1,0 +1,83 @@
+{
+  "uid" : "fe40e491f2ef29b4",
+  "name" : "test_registration",
+  "fullName" : "docs.testcases.test_registration#test_registration",
+  "historyId" : "2c5ea982fc2d05e3d2996f4b22aa9cad",
+  "time" : {
+    "start" : 1628086967444,
+    "stop" : 1628086973589,
+    "duration" : 6145
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '' == 'Your registr...s successful!'\n  - Your registration was successful!",
+  "statusTrace" : "def test_registration():\n        browser_options = Options()\n        browser_options.headless = True\n        driver = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)\n        driver.get(\"http://localhost:1667/#/\")\n    \n        time.sleep(2)\n        random_user_name = \"user\" + str(random.randint(202, 1000))\n    \n        user_input_data = [random_user_name, f\"{random_user_name}@hotmail.com\", \"Userpass1\"]\n    \n        driver.find_element_by_xpath(\"//a[@href='#/register']\").click()\n    \n        # Beviteli mezők feltöltése a random user adatokkal\n        for i in range(len(user_input_data)):\n            driver.find_element_by_xpath(f\"//fieldset[{i + 1}]/input\").send_keys(user_input_data[i])\n        driver.find_element_by_tag_name(\"button\").click()\n    \n        time.sleep(2)\n    \n        # Sikeres regisztrációs értesítési ablak szövegének ellenőrzése\n>       assert driver.find_element_by_class_name(\"swal-text\").text == \"Your registration was successful!\"\nE       AssertionError: assert '' == 'Your registr...s successful!'\nE         - Your registration was successful!\n\ndocs/testcases/test_registration.py:31: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert '' == 'Your registr...s successful!'\n  - Your registration was successful!",
+    "statusTrace" : "def test_registration():\n        browser_options = Options()\n        browser_options.headless = True\n        driver = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)\n        driver.get(\"http://localhost:1667/#/\")\n    \n        time.sleep(2)\n        random_user_name = \"user\" + str(random.randint(202, 1000))\n    \n        user_input_data = [random_user_name, f\"{random_user_name}@hotmail.com\", \"Userpass1\"]\n    \n        driver.find_element_by_xpath(\"//a[@href='#/register']\").click()\n    \n        # Beviteli mezők feltöltése a random user adatokkal\n        for i in range(len(user_input_data)):\n            driver.find_element_by_xpath(f\"//fieldset[{i + 1}]/input\").send_keys(user_input_data[i])\n        driver.find_element_by_tag_name(\"button\").click()\n    \n        time.sleep(2)\n    \n        # Sikeres regisztrációs értesítési ablak szövegének ellenőrzése\n>       assert driver.find_element_by_class_name(\"swal-text\").text == \"Your registration was successful!\"\nE       AssertionError: assert '' == 'Your registr...s successful!'\nE         - Your registration was successful!\n\ndocs/testcases/test_registration.py:31: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "856192837b707fdb",
+      "name" : "log",
+      "source" : "856192837b707fdb.txt",
+      "type" : "text/plain",
+      "size" : 344
+    }, {
+      "uid" : "fe2bbfc401a816be",
+      "name" : "stderr",
+      "source" : "fe2bbfc401a816be.txt",
+      "type" : "text/plain",
+      "size" : 215
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "docs.testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_registration"
+  }, {
+    "name" : "host",
+    "value" : "fv-az83-307"
+  }, {
+    "name" : "thread",
+    "value" : "3699-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "docs.testcases.test_registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "fe40e491f2ef29b4.json",
+  "parameterValues" : [ ]
+}
