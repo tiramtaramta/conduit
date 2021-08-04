@@ -1,0 +1,155 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[starts-with(@href, '#/@')]\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_global_feed_list",
+        "uid" : "3e1ad9b55f5aaaaa",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628084043592,
+          "stop" : 1628084073199,
+          "duration" : 29607
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_create_post",
+        "uid" : "f4127a8931ddfc5b",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628084079066,
+          "stop" : 1628084087084,
+          "duration" : 8018
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_create_posts",
+        "uid" : "f3ba71bc3233b90d",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628084087126,
+          "stop" : 1628084095150,
+          "duration" : 8024
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_delete_post",
+        "uid" : "23a2ce3ea263d7e5",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628084095192,
+          "stop" : 1628084103311,
+          "duration" : 8119
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_edit_settings",
+        "uid" : "e7fa9f5b305a186a",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628084103353,
+          "stop" : 1628084110340,
+          "duration" : 6987
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_export_my_last_post",
+        "uid" : "614c05be2400b5f0",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628084110383,
+          "stop" : 1628084118370,
+          "duration" : 7987
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_logout",
+        "uid" : "3dface1b1fbc94cb",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628084122007,
+          "stop" : 1628084130009,
+          "duration" : 8002
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_global_feed_pagination",
+        "uid" : "704a77ef843c430e",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628084130113,
+          "stop" : 1628084138131,
+          "duration" : 8018
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "67ff07f2d312c49eda254d2554a7d99e"
+    }, {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'registered_users.csv'",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "e3b7861150ed72bb",
+        "parentUid" : "eece2d1ad1426fcfab81dcff3ce01d2d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628084118412,
+          "stop" : 1628084122001,
+          "duration" : 3589
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "eece2d1ad1426fcfab81dcff3ce01d2d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '' == 'Your registr...s successful!'\n  - Your registration was successful!",
+      "children" : [ {
+        "name" : "test_registration",
+        "uid" : "2bd2f2b18a1b3d87",
+        "parentUid" : "ec724305259d984b1ecc0ce97bc504f8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628084138173,
+          "stop" : 1628084144331,
+          "duration" : 6158
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ec724305259d984b1ecc0ce97bc504f8"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
