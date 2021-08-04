@@ -13,7 +13,7 @@ def test_logout():
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)
     driver.get("http://localhost:1667/#/")
 
-    basic_registration(driver)
+    basic_login(driver)
     log_out_btn = find_element(driver, By.XPATH, "//*[@class='nav-link' and contains(text(),'Log out')]")
     log_out_btn.click()
 
