@@ -18,7 +18,7 @@ def test_registration200():
 
     driver.find_element_by_xpath("//a[@href='#/register']").click()
 
-    # Beviteli mezők feltöltése a random user adatokkal
+    # Beviteli mezők feltöltése a user adatokkal
     for i in range(len(user_input_data)):
         driver.find_element_by_xpath(f"//fieldset[{i + 1}]/input").send_keys(user_input_data[i])
     driver.find_element_by_tag_name("button").click()
@@ -40,12 +40,4 @@ def test_registration200():
     assert username_check == user_input_data[
         0], f"Test Failed: Username did not match expected ({user_input_data[0]})."
 
-    # A létrehozott felhasználó kimentése a későbbi belépésekhez
-    with open('registered_users.csv', 'a', encoding="utf-8") as csv_users:
-        csv_users.write(user_input_data[0] + ";")
-
     driver.quit()
-
-   
-
-   
