@@ -1,0 +1,11 @@
+[ {
+  "uid" : "700efde8692c17c8",
+  "name" : "test_global_feed_list",
+  "time" : {
+    "start" : 1628088493812,
+    "stop" : 1628088511550,
+    "duration" : 17738
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
