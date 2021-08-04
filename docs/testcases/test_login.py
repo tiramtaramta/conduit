@@ -40,6 +40,6 @@ def test_login():
     time.sleep(2)
 
     # Bejelentkezés tényének ellenőrzése
-    username_check = driver.find_element_by_xpath("//a[starts-with(@href, '#/@')]").text
+    username_check = driver.find_element_by_xpath("//a[@class='nav-link'][starts-with(@href, '#/@')]").text
     assert username_check == user_input_data[0], f"Test Failed: User is not logged in ({user_input_data[0]})."
     driver.quit()
