@@ -1,0 +1,83 @@
+{
+  "uid" : "9a4ccf2db7d8afc9",
+  "name" : "test_login",
+  "fullName" : "docs.testcases.test_login#test_login",
+  "historyId" : "3b63c183167f46b5730a46d06556452c",
+  "time" : {
+    "start" : 1628107001405,
+    "stop" : 1628107008279,
+    "duration" : 6874
+  },
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'By' is not defined",
+  "statusTrace" : "def test_login():\n        browser_options = Options()\n        browser_options.headless = True\n        driver = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)\n        driver.get(\"http://localhost:1667/#/\")\n    \n        time.sleep(2)\n    \n    \n        driver.find_element_by_xpath(\"//a[@href='#/login']\").click()\n    \n        # Automata regisztrációval létrejött felhasználók beolvasása\n        with open('docs/testcases/registered_users.csv') as users_file:\n            csv_reader = csv.reader(users_file, delimiter=';')\n            for row in csv_reader:\n                users_list = row\n    \n        # Random felhasználó kiválasztása a bejelentkezéshez\n        random_user_index = random.randint(0, len(users_list) - 1)\n        random_user_name = users_list[random_user_index]\n        user_input_data = [random_user_name, f\"{random_user_name}@hotmail.com\", \"Userpass1\"]\n    \n        # Bejelentkezési űrlap feltöltése\n        for i in range(len(user_input_data) - 1):\n            driver.find_element_by_xpath(f\"//fieldset[{i + 1}]/input\").send_keys(user_input_data[i + 1])\n    \n        time.sleep(1)\n    \n        driver.find_element_by_tag_name(\"button\").click()\n    \n        time.sleep(2)\n    \n        # Bejelentkezés tényének ellenőrzése\n>       username_check = find_element(driver, By.XPATH, \"//a[@class='nav-link'][starts-with(@href, '#/@')]\")\nE       NameError: name 'By' is not defined\n\ndocs/testcases/test_login.py:44: NameError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "NameError: name 'By' is not defined",
+    "statusTrace" : "def test_login():\n        browser_options = Options()\n        browser_options.headless = True\n        driver = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)\n        driver.get(\"http://localhost:1667/#/\")\n    \n        time.sleep(2)\n    \n    \n        driver.find_element_by_xpath(\"//a[@href='#/login']\").click()\n    \n        # Automata regisztrációval létrejött felhasználók beolvasása\n        with open('docs/testcases/registered_users.csv') as users_file:\n            csv_reader = csv.reader(users_file, delimiter=';')\n            for row in csv_reader:\n                users_list = row\n    \n        # Random felhasználó kiválasztása a bejelentkezéshez\n        random_user_index = random.randint(0, len(users_list) - 1)\n        random_user_name = users_list[random_user_index]\n        user_input_data = [random_user_name, f\"{random_user_name}@hotmail.com\", \"Userpass1\"]\n    \n        # Bejelentkezési űrlap feltöltése\n        for i in range(len(user_input_data) - 1):\n            driver.find_element_by_xpath(f\"//fieldset[{i + 1}]/input\").send_keys(user_input_data[i + 1])\n    \n        time.sleep(1)\n    \n        driver.find_element_by_tag_name(\"button\").click()\n    \n        time.sleep(2)\n    \n        # Bejelentkezés tényének ellenőrzése\n>       username_check = find_element(driver, By.XPATH, \"//a[@class='nav-link'][starts-with(@href, '#/@')]\")\nE       NameError: name 'By' is not defined\n\ndocs/testcases/test_login.py:44: NameError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "28ef1483d734e634",
+      "name" : "log",
+      "source" : "28ef1483d734e634.txt",
+      "type" : "text/plain",
+      "size" : 344
+    }, {
+      "uid" : "203cad06057825b7",
+      "name" : "stderr",
+      "source" : "203cad06057825b7.txt",
+      "type" : "text/plain",
+      "size" : 215
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "docs.testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-971"
+  }, {
+    "name" : "thread",
+    "value" : "3758-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "docs.testcases.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "9a4ccf2db7d8afc9.json",
+  "parameterValues" : [ ]
+}
