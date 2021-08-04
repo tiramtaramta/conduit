@@ -12,7 +12,7 @@ def test_logout():
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)
     driver.get("http://localhost:1667/#/")
     
-    data.login(driver)
+    login(driver)
 
     time.sleep(2)
 
