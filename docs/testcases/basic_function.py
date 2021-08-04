@@ -1,6 +1,7 @@
 import time
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.by import By
 
 
 def find_element(driver, search_type, value):
@@ -12,7 +13,7 @@ def find_element(driver, search_type, value):
 
 
 def basic_registration(driver):
-    user_input_data = ["user1001", "user1008@hotmail.com", "Userpass1"]
+    user_input_data = ["user1001", "user1009@hotmail.com", "Userpass1"]
 
     driver.find_element_by_xpath("//a[@href='#/register']").click()
 
@@ -23,7 +24,9 @@ def basic_registration(driver):
     time.sleep(2)
 
     # Értesítési ablak bezárása
-    driver.find_element_by_xpath("//button[normalize-space()='OK']").click()
+    ok_btn = find_element(driver, By.XPATH, "//button[normalize-space()='OK']")
+    ok_btn.click()
+#     driver.find_element_by_xpath("//button[normalize-space()='OK']").click()
 
 
 def basic_login(driver):
