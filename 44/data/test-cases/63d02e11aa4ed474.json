@@ -1,12 +1,12 @@
 {
-  "uid" : "518b3ff3b23cf05b",
+  "uid" : "63d02e11aa4ed474",
   "name" : "test_registration",
   "fullName" : "docs.testcases.test_registration#test_registration",
   "historyId" : "2c5ea982fc2d05e3d2996f4b22aa9cad",
   "time" : {
-    "start" : 1628102772342,
-    "stop" : 1628102791157,
-    "duration" : 18815
+    "start" : 1628102799526,
+    "stop" : 1628102810706,
+    "duration" : 11180
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,15 +16,15 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "53eb287112200724",
+      "uid" : "93fca614bb1fa9d1",
       "name" : "log",
-      "source" : "53eb287112200724.txt",
+      "source" : "93fca614bb1fa9d1.txt",
       "type" : "text/plain",
       "size" : 344
     }, {
-      "uid" : "228b4a17b826a5bc",
+      "uid" : "b21f9c7501034189",
       "name" : "stderr",
-      "source" : "228b4a17b826a5bc.txt",
+      "source" : "b21f9c7501034189.txt",
       "type" : "text/plain",
       "size" : 215
     } ],
@@ -46,7 +46,7 @@
     "value" : "fv-az83-307"
   }, {
     "name" : "thread",
-    "value" : "3747-MainThread"
+    "value" : "3723-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -70,6 +70,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "518b3ff3b23cf05b.json",
+  "source" : "63d02e11aa4ed474.json",
   "parameterValues" : [ ]
 }
