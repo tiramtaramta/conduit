@@ -9,7 +9,7 @@ from basic_function import basic_login, basic_registration, find_element
 # -------- A005, TC-0003 Kijelentkezés --------
 def test_logout():
     browser_options = Options()
-    browser_options.headless = False
+    browser_options.headless = True
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)
     driver.get("http://localhost:1667/#/")
 
