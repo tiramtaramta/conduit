@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+from basic_function import find_element
 import random
 import time
 import csv
@@ -19,7 +20,7 @@ def test_login():
     driver.find_element_by_xpath("//a[@href='#/login']").click()
 
     # Automata regisztrációval létrejött felhasználók beolvasása
-    with open('registered_users.csv') as users_file:
+    with open('docs/testcases/registered_users.csv') as users_file:
         csv_reader = csv.reader(users_file, delimiter=';')
         for row in csv_reader:
             users_list = row
@@ -40,6 +41,6 @@ def test_login():
     time.sleep(2)
 
     # Bejelentkezés tényének ellenőrzése
-    username_check = driver.find_element_by_xpath("//a[@class='nav-link'][starts-with(@href, '#/@')]").text
+    username_check = find_element(driver, By.XPATH, "//a[@class='nav-link'][starts-with(@href, '#/@')]").text
     assert username_check == user_input_data[0], f"Test Failed: User is not logged in ({user_input_data[0]})."
     driver.quit()
