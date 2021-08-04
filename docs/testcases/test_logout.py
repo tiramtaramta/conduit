@@ -13,11 +13,10 @@ def test_logout():
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)
     driver.get("http://localhost:1667/#/")
 
-    basic_login(driver)
+    basic_registration(driver)
     time.sleep(3)
-    driver.find_element_by_xpath("//i[@class='ion-android-exit']").click()
-    # log_out_btn = find_element(driver, By.XPATH, "//a[@active-class='active' AND class='nav-link')]")
-    # log_out_btn.click()
+    log_out_btn = find_element(driver, By.XPATH, "//a[@active-class='active' AND @class='nav-link')]")
+    log_out_btn.click()
     time.sleep(2)
 
     # Kijelentkezés tényének ellenőrzése
