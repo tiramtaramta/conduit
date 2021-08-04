@@ -20,11 +20,13 @@ def basic_registration(driver):
     driver.find_element_by_tag_name("button").click()
     time.sleep(2)
 
-    # Értesítési ablak bezárása
-    ok_btn = find_element(driver, By.XPATH, "//button[normalize-space()='OK']")
-    ok_btn.click()
-#     driver.find_element_by_xpath("//button[normalize-space()='OK']").click()
+    time.sleep(2)
 
+    # Értesítési ablak bezárása
+    driver.find_element_by_xpath("//button[normalize-space()='OK']").click()
+
+    time.sleep(1)
+    
 
 def basic_login(driver):
     sign_in_btn = driver.find_element_by_xpath("//a[@href='#/login']")
@@ -36,5 +38,6 @@ def basic_login(driver):
     email_input.send_keys("user200@hotmail.com")
     password_input.send_keys("Userpass1")
 
-    sign_up_button = driver.find_element_by_xpath("//button[@class='btn btn-lg btn-primary pull-xs-right']")
-    sign_up_button.click()
+    time.sleep(1)
+
+    driver.find_element_by_tag_name("button").click()
