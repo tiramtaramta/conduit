@@ -1,8 +1,0 @@
-[ {
-  "buildOrder" : 50,
-  "reportUrl" : "https://tiramtaramta.github.io/conduit/50/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "Test defects" : 2
-  }
-} ]
