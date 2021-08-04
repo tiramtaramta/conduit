@@ -1,0 +1,101 @@
+[ {
+  "uid" : "368691fbc29efbb8",
+  "name" : "test_create_posts",
+  "time" : {
+    "start" : 1628078748105,
+    "stop" : 1628078756124,
+    "duration" : 8019
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5930123898a07855",
+  "name" : "test_cookie_accept",
+  "time" : {
+    "start" : 1628078735268,
+    "stop" : 1628078741028,
+    "duration" : 5760
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f06e2dbdc358580d",
+  "name" : "test_create_post",
+  "time" : {
+    "start" : 1628078741032,
+    "stop" : 1628078748056,
+    "duration" : 7024
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "7ce3c5a15d129f42",
+  "name" : "test_registration200",
+  "time" : {
+    "start" : 1628078793744,
+    "stop" : 1628078804819,
+    "duration" : 11075
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "10fe5ffd0ac99106",
+  "name" : "test_delete_post",
+  "time" : {
+    "start" : 1628078756167,
+    "stop" : 1628078764211,
+    "duration" : 8044
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "dcaada73ac30452a",
+  "name" : "test_global_feed_list",
+  "time" : {
+    "start" : 1628078725082,
+    "stop" : 1628078735176,
+    "duration" : 10094
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "88f7800aa798fb50",
+  "name" : "test_edit_settings",
+  "time" : {
+    "start" : 1628078764257,
+    "stop" : 1628078771384,
+    "duration" : 7127
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "bc2db69ac64fc5bd",
+  "name" : "test_global_feed_pagination",
+  "time" : {
+    "start" : 1628078779532,
+    "stop" : 1628078787626,
+    "duration" : 8094
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "e2b4f30de2796f3a",
+  "name" : "test_registration",
+  "time" : {
+    "start" : 1628078787669,
+    "stop" : 1628078793736,
+    "duration" : 6067
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "365bf0550251b67c",
+  "name" : "test_logout",
+  "time" : {
+    "start" : 1628078771428,
+    "stop" : 1628078779485,
+    "duration" : 8057
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
