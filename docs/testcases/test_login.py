@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
 from basic_function import find_element
 import random
 import time
@@ -28,7 +29,8 @@ def test_login():
     # Random felhasználó kiválasztása a bejelentkezéshez
     random_user_index = random.randint(0, len(users_list) - 1)
     random_user_name = users_list[random_user_index]
-    user_input_data = [random_user_name, f"{random_user_name}@hotmail.com", "Userpass1"]
+#     user_input_data = [random_user_name, f"{random_user_name}@hotmail.com", "Userpass1"]
+    user_input_data = ["user200", "user200@hotmail.com", "Userpass1"]
 
     # Bejelentkezési űrlap feltöltése
     for i in range(len(user_input_data) - 1):
@@ -41,6 +43,6 @@ def test_login():
     time.sleep(2)
 
     # Bejelentkezés tényének ellenőrzése
-    username_check = find_element(driver, By.XPATH, "//a[@class='nav-link'][starts-with(@href, '#/@')]")
+    username_check = find_element(driver, By.XPATH, "//a[@class='nav-link'] AND [starts-with(@href, '#/@')]")
     assert username_check.text == user_input_data[0], f"Test Failed: User is not logged in ({user_input_data[0]})."
     driver.quit()
