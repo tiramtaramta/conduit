@@ -14,7 +14,7 @@ def test_logout():
     driver.get("http://localhost:1667/#/")
 
     basic_registration(driver)
-    log_out_btn = find_element(driver, By.XPATH, "//a[@active-class='active' AND @class='nav-link'])")
+    log_out_btn = find_element(driver, By.XPATH, "//a[@active-class='active' AND @class='nav-link']")
     log_out_btn.click()
 
     # Kijelentkezés tényének ellenőrzése
