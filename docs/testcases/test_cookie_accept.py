@@ -23,7 +23,7 @@ def test_cookie_accept():
     time.sleep(2)
 
     # # Cookie-k elutasítása folyamat
-    # self.driver.find_element_by_xpath(
+    # driver.find_element_by_xpath(
     #     "//button[@class='cookie__bar__buttons__button cookie__bar__buttons__button--decline']").click()
     #
     # time.sleep(2)
