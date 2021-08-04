@@ -9,14 +9,14 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "23f38770f688125d",
-      "reportUrl" : "https://tiramtaramta.github.io/conduit/46//#testresult/23f38770f688125d",
+      "uid" : "4040cd462cc32b6c",
+      "reportUrl" : "https://tiramtaramta.github.io/conduit/47//#testresult/4040cd462cc32b6c",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
       "time" : {
-        "start" : 1628104077426,
-        "stop" : 1628104101128,
-        "duration" : 23702
+        "start" : 1628104498756,
+        "stop" : 1628104518764,
+        "duration" : 20008
       }
     } ]
   },
@@ -30,13 +30,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "38806ea8e6e0a58f",
-      "reportUrl" : "https://tiramtaramta.github.io/conduit/46//#testresult/38806ea8e6e0a58f",
+      "uid" : "3fe554d56b61baf1",
+      "reportUrl" : "https://tiramtaramta.github.io/conduit/47//#testresult/3fe554d56b61baf1",
       "status" : "passed",
       "time" : {
-        "start" : 1628104101173,
-        "stop" : 1628104112166,
-        "duration" : 10993
+        "start" : 1628104518812,
+        "stop" : 1628104529844,
+        "duration" : 11032
       }
     } ]
   }

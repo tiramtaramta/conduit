@@ -1,12 +1,12 @@
 {
-  "uid" : "38806ea8e6e0a58f",
+  "uid" : "3fe554d56b61baf1",
   "name" : "test_registration",
   "fullName" : "docs.testcases.test_registration#test_registration",
   "historyId" : "2c5ea982fc2d05e3d2996f4b22aa9cad",
   "time" : {
-    "start" : 1628104101173,
-    "stop" : 1628104112166,
-    "duration" : 10993
+    "start" : 1628104518812,
+    "stop" : 1628104529844,
+    "duration" : 11032
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,23 +16,23 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "e539a9a353e80ce4",
+      "uid" : "c038a20a7cf01bc1",
       "name" : "log",
-      "source" : "e539a9a353e80ce4.txt",
+      "source" : "c038a20a7cf01bc1.txt",
       "type" : "text/plain",
       "size" : 344
     }, {
-      "uid" : "28a7e413b62a75a1",
+      "uid" : "496ec479d8d24ca1",
       "name" : "stderr",
-      "source" : "28a7e413b62a75a1.txt",
+      "source" : "496ec479d8d24ca1.txt",
       "type" : "text/plain",
       "size" : 215
     } ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "attachmentsCount" : 2,
     "shouldDisplayMessage" : false,
-    "hasContent" : true
+    "hasContent" : true,
+    "stepsCount" : 0
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -43,10 +43,10 @@
     "value" : "test_registration"
   }, {
     "name" : "host",
-    "value" : "fv-az81-563"
+    "value" : "fv-az77-440"
   }, {
     "name" : "thread",
-    "value" : "3649-MainThread"
+    "value" : "3695-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -70,6 +70,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "38806ea8e6e0a58f.json",
+  "source" : "3fe554d56b61baf1.json",
   "parameterValues" : [ ]
 }
