@@ -16,7 +16,7 @@ def test_logout():
 
     time.sleep(2)
 
-    driver.find_element_by_xpath("//i[@class='ion-android-exit']").click()
+    driver.find_element_by_xpath("//a[@active-class='active']").click()
 
     time.sleep(2)
 
