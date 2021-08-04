@@ -25,7 +25,7 @@ def test_registration():
         driver.find_element_by_xpath(f"//fieldset[{i + 1}]/input").send_keys(user_input_data[i])
     driver.find_element_by_tag_name("button").click()
 
-    time.sleep(2)
+    time.sleep(4)
 
     # Sikeres regisztrációs értesítési ablak szövegének ellenőrzése
     assert driver.find_element_by_class_name("swal-text").text == "Your registration was successful!"
