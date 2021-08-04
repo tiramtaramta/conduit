@@ -43,7 +43,7 @@ def test_registration():
         0], f"Test Failed: Username did not match expected ({user_input_data[0]})."
 
     # A létrehozott felhasználó nevének kimentése a későbbi belépésekhez
-    with open('registered_users.csv', 'a', encoding="utf-8") as csv_users:
+    with open('/docs/testcases/registered_users.csv', 'a', encoding="utf-8") as csv_users:
         csv_users.write(random_user_name + ";")
 
     driver.quit()
