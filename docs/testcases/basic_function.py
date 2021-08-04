@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 
 
 def find_element(driver, search_type, value):
-    element = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((search_type, value)))
+    element = WebDriverWait(driver, 10).until(EC.visibility_of_element_located(search_type, value))
     return element
 
 
