@@ -1,0 +1,138 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[starts-with(@href, '#/@')]\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_global_feed_list",
+        "uid" : "d2b0964b3f8c2a6",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628087817001,
+          "stop" : 1628087825908,
+          "duration" : 8907
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_create_post",
+        "uid" : "cca261d4c10effcd",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628087831763,
+          "stop" : 1628087839798,
+          "duration" : 8035
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_create_posts",
+        "uid" : "2b146d131b6e05de",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628087839841,
+          "stop" : 1628087847853,
+          "duration" : 8012
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_delete_post",
+        "uid" : "42edd291cb61ab91",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628087847894,
+          "stop" : 1628087855886,
+          "duration" : 7992
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_edit_settings",
+        "uid" : "4ceb63defeadb720",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628087855926,
+          "stop" : 1628087862897,
+          "duration" : 6971
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_export_my_last_post",
+        "uid" : "2f51608859b24b4a",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628087862939,
+          "stop" : 1628087870897,
+          "duration" : 7958
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_global_feed_pagination",
+        "uid" : "7734e715975bfe34",
+        "parentUid" : "67ff07f2d312c49eda254d2554a7d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628087878434,
+          "stop" : 1628087886423,
+          "duration" : 7989
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "67ff07f2d312c49eda254d2554a7d99e"
+    }, {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'registered_users.csv'",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "289b5d0ded49aa9f",
+        "parentUid" : "eece2d1ad1426fcfab81dcff3ce01d2d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628087870939,
+          "stop" : 1628087874512,
+          "duration" : 3573
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "eece2d1ad1426fcfab81dcff3ce01d2d"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@active-class='active']\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_logout",
+        "uid" : "47884057bddf7aa3",
+        "parentUid" : "752df0a7b74eb78771a5e60363564ffd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628087874519,
+          "stop" : 1628087878340,
+          "duration" : 3821
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "752df0a7b74eb78771a5e60363564ffd"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
