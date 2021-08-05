@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '' == 'Your registr...s successful!'\n  - Your registration was successful!",
+      "children" : [ {
+        "name" : "test_registration_process",
+        "uid" : "22c64f00dd9e53ea",
+        "parentUid" : "ec724305259d984b1ecc0ce97bc504f8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628143715965,
+          "stop" : 1628143718825,
+          "duration" : 2860
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ec724305259d984b1ecc0ce97bc504f8"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
