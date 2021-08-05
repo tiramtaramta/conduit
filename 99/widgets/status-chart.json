@@ -1,0 +1,91 @@
+[ {
+  "uid" : "81ed9bf222b83ad0",
+  "name" : "test_logout_process",
+  "time" : {
+    "start" : 1628163696270,
+    "stop" : 1628163704632,
+    "duration" : 8362
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "95a1356d09e29c59",
+  "name" : "test_registration_process",
+  "time" : {
+    "start" : 1628163659175,
+    "stop" : 1628163663334,
+    "duration" : 4159
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "34b629899ec41b55",
+  "name" : "test_export_my_last_post",
+  "time" : {
+    "start" : 1628163781721,
+    "stop" : 1628163794148,
+    "duration" : 12427
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "69105aade6270501",
+  "name" : "test_delete_post_process",
+  "time" : {
+    "start" : 1628163765698,
+    "stop" : 1628163780176,
+    "duration" : 14478
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "881f7e0fcf728a21",
+  "name" : "test_edit_settings_process",
+  "time" : {
+    "start" : 1628163671836,
+    "stop" : 1628163694714,
+    "duration" : 22878
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "47155ac4b613e2dd",
+  "name" : "test_login_process",
+  "time" : {
+    "start" : 1628163664916,
+    "stop" : 1628163671200,
+    "duration" : 6284
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a130751e718729d",
+  "name" : "test_create_posts_process",
+  "time" : {
+    "start" : 1628163722231,
+    "stop" : 1628163764099,
+    "duration" : 41868
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "372db42fcb39356f",
+  "name" : "test_create_post",
+  "time" : {
+    "start" : 1628163706207,
+    "stop" : 1628163720637,
+    "duration" : 14430
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a77f4f8625f1d15a",
+  "name" : "test_cookie_process",
+  "time" : {
+    "start" : 1628163655488,
+    "stop" : 1628163657616,
+    "duration" : 2128
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
