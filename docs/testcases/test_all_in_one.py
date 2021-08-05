@@ -50,7 +50,9 @@ class TestConduit(object):
 
     # -------- A002, TC-0002 Regisztráció helyes adatokkal --------
     def test_registration_process(self):
+
         user_input_data = ["user200", "user200@hotmail.com", "Userpass1"]
+
         self.driver.find_element_by_xpath("//a[@href='#/register']").click()
 
         # Beviteli mezők feltöltése a random user adatokkal
@@ -58,37 +60,55 @@ class TestConduit(object):
             self.driver.find_element_by_xpath(f"//fieldset[{i + 1}]/input").send_keys(user_input_data[i])
         self.driver.find_element_by_tag_name("button").click()
 
+        time.sleep(2)
+
         # Sikeres regisztrációs értesítési ablak szövegének ellenőrzése
         swal_text = find_element(self.driver, By.CLASS_NAME, "swal-text")
         assert swal_text.text == "Your registration was successful!"
+        # assert self.driver.find_element_by_class_name("swal-text").text == "Your registration was successful!"
+
+        # time.sleep(2)
 
         # Értesítési ablak bezárása
         close_btn = find_element(self.driver, By.XPATH, "//button[normalize-space()='OK']")
         close_btn.click()
+        # self.driver.find_element_by_xpath("//button[normalize-space()='OK']").click()
+
+        time.sleep(1)
 
         # Bejelentkezés tényének ellenőrzése
         username_check = self.driver.find_element_by_xpath("//a[starts-with(@href, '#/@')]").text
         assert username_check == user_input_data[
             0], f"Test Failed: Username did not match expected ({user_input_data[0]})."
 
+        # time.sleep(2)
+
     # -------- A004, TC-0010 Bejelentkezés helyes adatokkal --------
     def test_login_process(self):
         user_input_data = ["user200", "user200@hotmail.com", "Userpass1"]
+
         self.driver.find_element_by_xpath("//a[@href='#/login']").click()
 
         # Bejelentkezési űrlap feltöltése
         for i in range(len(user_input_data) - 1):
             self.driver.find_element_by_xpath(f"//fieldset[{i + 1}]/input").send_keys(user_input_data[i + 1])
 
+        time.sleep(1)
+
         self.driver.find_element_by_tag_name("button").click()
 
+        time.sleep(3)
+
         # Bejelentkezés tényének ellenőrzése
-        username_check = find_element(self.driver, By.XPATH, "//a[starts-with(@href, '#/@')]")
-        assert username_check.text == user_input_data[0], f"Test Failed: User is not logged in ({user_input_data[0]})."
+        username_check = self.driver.find_element_by_xpath("//a[starts-with(@href, '#/@')]").text
+        assert username_check == user_input_data[0], f"Test Failed: User is not logged in ({user_input_data[0]})."
+
+        time.sleep(2)
 
     # -------- A010, TC-0034 Saját profil szerkesztése, képcsere --------
     def test_edit_settings_process(self):
         basic_login(self.driver)
+
         self.driver.find_element_by_xpath("//a[@href='#/settings']").click()
 
         time.sleep(2)
