@@ -2,6 +2,7 @@ from selenium import webdriver
 import random
 import time
 import csv
+from csv import reader
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
@@ -19,7 +20,7 @@ def find_element(driver, search_type, value):
 def basic_login(driver):
     driver.find_element_by_xpath("//a[@href='#/login']").click()
 
-    user_input_data = ["user2000", "user2000@hotmail.com", "Userpass1"]
+    user_input_data = ["user200", "user200@hotmail.com", "Userpass1"]
 
     # Bejelentkezési űrlap feltöltése
     for i in range(len(user_input_data) - 1):
@@ -80,7 +81,7 @@ class TestConduit(object):
     def test_registration_process(self):
 
         # random_user_name = "user" + str(random.randint(202, 1000))
-        user_input_data = ["user2000", "user2000@hotmail.com", "Userpass1"]
+        user_input_data = ["user200", "user200@hotmail.com", "Userpass1"]
         # user_input_data = [random_user_name, f"{random_user_name}@hotmail.com", "Userpass1"]
 
         self.driver.find_element_by_xpath("//a[@href='#/register']").click()
@@ -123,7 +124,7 @@ class TestConduit(object):
 
         self.driver.find_element_by_tag_name("button").click()
 
-        time.sleep(2)
+        time.sleep(3)
 
         # Bejelentkezés tényének ellenőrzése
         username_check = self.driver.find_element_by_xpath("//a[starts-with(@href, '#/@')]").text
