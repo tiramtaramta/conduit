@@ -1,8 +1,6 @@
 [ {
-  "buildOrder" : 78,
-  "reportUrl" : "https://tiramtaramta.github.io/conduit/78/",
+  "buildOrder" : 86,
+  "reportUrl" : "https://tiramtaramta.github.io/conduit/86/",
   "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 19502
-  }
+  "data" : { }
 } ]
