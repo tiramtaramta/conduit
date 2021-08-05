@@ -1,15 +1,15 @@
 from selenium import webdriver
 import time
 import csv
-from csv import reader
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
+import math
 from selenium.webdriver.common.by import By
 import os
-from basic_function import basic_login, basic_registration, find_element
+from basic_function import basic_login, find_element
 
 
 class TestConduit(object):
@@ -21,8 +21,6 @@ class TestConduit(object):
 
     def teardown(self):
         self.driver.quit()
-
-    time.sleep(2)
 
     # -------- A028, TC-0037 Cookie kezelési tájékoztató --------
     def test_cookie_process(self):
@@ -340,3 +338,24 @@ class TestConduit(object):
 
         assert len(articles_list) == len(
             check_articles_list) - 1, f"Test Failed: The length of the lists are not exactly the same."
+
+    # -------- A007, TC-0025 Bejegyzések listájának megtekintése (lapozóval) --------
+    def test_global_feed_pagination(self):
+        basic_login(self.driver)
+
+        self.driver.find_element_by_xpath("//a[starts-with(@href, '#/')]").click()
+
+        time.sleep(2)
+
+        articles_list = self.driver.find_elements_by_xpath("//div[@class='article-preview']/a/h1")
+
+        # lapozógombok használata
+        pages = self.driver.find_elements_by_class_name("page-link")
+
+        for page in pages:
+            page.click()
+            time.sleep(1)
+
+        # Az oldal bejárásának ellenőrzése
+        assert len(pages) == int(math.ceil(
+            len(articles_list) / 10)), f"Test Failed: The length of the list and pagination not exactly the same."
