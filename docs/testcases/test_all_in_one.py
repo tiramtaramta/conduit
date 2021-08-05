@@ -195,7 +195,7 @@ class TestConduit(object):
 
         time.sleep(2)
 
-    # -------- A010, TC-0034 Saját profil szerkesztése, képcsere --------
+    # -------- A005, TC-0003 Kijelentkezés --------
     def test_logout_process(self):
         basic_login(self.driver)
 
@@ -304,3 +304,37 @@ class TestConduit(object):
 
         assert not new_articles_list[0] == articles_list[
             0], f"Test Failed: Content is not deleted ({articles_list[0]})."
+
+    # -------- A029 Adatok lementése felületről --------
+    def test_export_my_last_post(self):
+        basic_login(self.driver)
+
+        self.driver.find_element_by_xpath("//a[starts-with(@href, '#/@')]").click()
+
+        time.sleep(2)
+
+        articles_list = self.driver.find_elements_by_tag_name("h1")
+
+        if os.path.exists("my_last_article.txt"):
+            os.remove("my_last_article.txt")
+        else:
+            pass
+
+        articles_list[0].click()
+
+        time.sleep(2)
+
+        article_title = self.driver.find_element_by_tag_name("h1").text
+        article_text = self.driver.find_element_by_tag_name("p").text
+        with open("my_last_article.txt", "a") as my_txt:
+            my_txt.write(f"{article_title};{article_text};\n")
+
+        time.sleep(3)
+
+        # a kiírt tartalom ellenőrzése
+        with open("my_last_article.txt", "r") as my_txt2:
+            my_txt = my_txt2.readline()
+            my_txt_list = my_txt.split(";")
+
+        assert my_txt_list[0] == article_title, f"Test Failed: Content title is not exported."
+        assert my_txt_list[1] == article_text, f"Test Failed: Content text is not exported."
