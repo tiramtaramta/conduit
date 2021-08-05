@@ -1,5 +1,4 @@
 from selenium import webdriver
-import random
 import time
 import csv
 from csv import reader
@@ -10,33 +9,34 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 import os
+from basic_function import basic_login, basic_registration, find_element
 
 
-def find_element(driver, search_type, value):
-    element = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((search_type, value)))
-    return element
+# def find_element(driver, search_type, value):
+#     element = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((search_type, value)))
+#     return element
 
 
-def basic_login(driver):
-    driver.find_element_by_xpath("//a[@href='#/login']").click()
-
-    user_input_data = ["user200", "user200@hotmail.com", "Userpass1"]
-
-    # Bejelentkezési űrlap feltöltése
-    for i in range(len(user_input_data) - 1):
-        driver.find_element_by_xpath(f"//fieldset[{i + 1}]/input").send_keys(user_input_data[i + 1])
-
-    time.sleep(1)
-
-    driver.find_element_by_tag_name("button").click()
-
-    time.sleep(2)
-
-    # Bejelentkezés tényének ellenőrzése
-    username_check = driver.find_element_by_xpath("//a[starts-with(@href, '#/@')]").text
-    assert username_check == user_input_data[0], f"Test Failed: User is not logged in ({user_input_data[0]})."
-
-    time.sleep(2)
+# def basic_login(driver):
+#     driver.find_element_by_xpath("//a[@href='#/login']").click()
+#
+#     user_input_data = ["user200", "user200@hotmail.com", "Userpass1"]
+#
+#     # Bejelentkezési űrlap feltöltése
+#     for i in range(len(user_input_data) - 1):
+#         driver.find_element_by_xpath(f"//fieldset[{i + 1}]/input").send_keys(user_input_data[i + 1])
+#
+#     time.sleep(1)
+#
+#     driver.find_element_by_tag_name("button").click()
+#
+#     time.sleep(2)
+#
+#     # Bejelentkezés tényének ellenőrzése
+#     username_check = driver.find_element_by_xpath("//a[starts-with(@href, '#/@')]").text
+#     assert username_check == user_input_data[0], f"Test Failed: User is not logged in ({user_input_data[0]})."
+#
+#     time.sleep(2)
 
 
 class TestConduit(object):
@@ -80,9 +80,7 @@ class TestConduit(object):
     # -------- A002, TC-0002 Regisztráció helyes adatokkal --------
     def test_registration_process(self):
 
-        # random_user_name = "user" + str(random.randint(202, 1000))
         user_input_data = ["user200", "user200@hotmail.com", "Userpass1"]
-        # user_input_data = [random_user_name, f"{random_user_name}@hotmail.com", "Userpass1"]
 
         self.driver.find_element_by_xpath("//a[@href='#/register']").click()
 
@@ -94,12 +92,16 @@ class TestConduit(object):
         time.sleep(2)
 
         # Sikeres regisztrációs értesítési ablak szövegének ellenőrzése
-        assert self.driver.find_element_by_class_name("swal-text").text == "Your registration was successful!"
+        swal_text = find_element(self.driver, By.CLASS_NAME, "swal-text")
+        assert swal_text.text == "Your registration was successful!"
+        # assert self.driver.find_element_by_class_name("swal-text").text == "Your registration was successful!"
 
-        time.sleep(2)
+        # time.sleep(2)
 
         # Értesítési ablak bezárása
-        self.driver.find_element_by_xpath("//button[normalize-space()='OK']").click()
+        close_btn = find_element(self.driver, By.XPATH, "//button[normalize-space()='OK']")
+        close_btn.click()
+        # self.driver.find_element_by_xpath("//button[normalize-space()='OK']").click()
 
         time.sleep(1)
 
@@ -108,7 +110,7 @@ class TestConduit(object):
         assert username_check == user_input_data[
             0], f"Test Failed: Username did not match expected ({user_input_data[0]})."
 
-        time.sleep(2)
+        # time.sleep(2)
 
     # -------- A004, TC-0010 Bejelentkezés helyes adatokkal --------
     def test_login_process(self):
