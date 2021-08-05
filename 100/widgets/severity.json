@@ -1,0 +1,91 @@
+[ {
+  "uid" : "17cb1fd6001222de",
+  "name" : "test_create_post",
+  "time" : {
+    "start" : 1628165082236,
+    "stop" : 1628165096941,
+    "duration" : 14705
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ab7980cea833e9f7",
+  "name" : "test_logout_process",
+  "time" : {
+    "start" : 1628165072237,
+    "stop" : 1628165080674,
+    "duration" : 8437
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eda672c521467492",
+  "name" : "test_login_process",
+  "time" : {
+    "start" : 1628165039973,
+    "stop" : 1628165046258,
+    "duration" : 6285
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "634da879f356c6f5",
+  "name" : "test_edit_settings_process",
+  "time" : {
+    "start" : 1628165047837,
+    "stop" : 1628165070662,
+    "duration" : 22825
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a733f4f0570c11d4",
+  "name" : "test_export_my_last_post",
+  "time" : {
+    "start" : 1628165157772,
+    "stop" : 1628165170187,
+    "duration" : 12415
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ee92cdffed21778b",
+  "name" : "test_delete_post_process",
+  "time" : {
+    "start" : 1628165141757,
+    "stop" : 1628165156235,
+    "duration" : 14478
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c45a8edcf6ec5095",
+  "name" : "test_create_posts_process",
+  "time" : {
+    "start" : 1628165098494,
+    "stop" : 1628165140191,
+    "duration" : 41697
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b069e751f2825f2",
+  "name" : "test_registration_process",
+  "time" : {
+    "start" : 1628165034576,
+    "stop" : 1628165038441,
+    "duration" : 3865
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f90a4ac6ecdbb16",
+  "name" : "test_cookie_process",
+  "time" : {
+    "start" : 1628165030880,
+    "stop" : 1628165032977,
+    "duration" : 2097
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
