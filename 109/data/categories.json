@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'Email already taken.' == 'Your registr...s successful!'\n  - Your registration was successful!\n  + Email already taken.",
+      "children" : [ {
+        "name" : "test_registration_process",
+        "uid" : "dedfd5f1752c5e5b",
+        "parentUid" : "16e8fa11192c58bc179da6f3c02e81a2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628263323643,
+          "stop" : 1628263326027,
+          "duration" : 2384
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "16e8fa11192c58bc179da6f3c02e81a2"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
