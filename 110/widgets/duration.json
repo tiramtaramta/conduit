@@ -1,0 +1,111 @@
+[ {
+  "uid" : "20ece7fc1878a2b5",
+  "name" : "test_create_post",
+  "time" : {
+    "start" : 1628263744755,
+    "stop" : 1628263759571,
+    "duration" : 14816
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bdcf3fdb9937ced7",
+  "name" : "test_global_feed_list",
+  "time" : {
+    "start" : 1628263832174,
+    "stop" : 1628263839767,
+    "duration" : 7593
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1124d8381347f4b9",
+  "name" : "test_logout_process",
+  "time" : {
+    "start" : 1628263738676,
+    "stop" : 1628263744127,
+    "duration" : 5451
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "256ca34e3a5a0d36",
+  "name" : "test_global_feed_pagination",
+  "time" : {
+    "start" : 1628263840416,
+    "stop" : 1628263849934,
+    "duration" : 9518
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba932fb7648b1d99",
+  "name" : "test_create_posts_process",
+  "time" : {
+    "start" : 1628263761218,
+    "stop" : 1628263803390,
+    "duration" : 42172
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "62ee3d6761448ed6",
+  "name" : "test_export_my_last_post",
+  "time" : {
+    "start" : 1628263817998,
+    "stop" : 1628263830533,
+    "duration" : 12535
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a80babfd8ec264fb",
+  "name" : "test_registration_process",
+  "time" : {
+    "start" : 1628263717068,
+    "stop" : 1628263721110,
+    "duration" : 4042
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7605937791882c04",
+  "name" : "test_login_process",
+  "time" : {
+    "start" : 1628263722744,
+    "stop" : 1628263724658,
+    "duration" : 1914
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b8c053c485801380",
+  "name" : "test_cookie_process",
+  "time" : {
+    "start" : 1628263713332,
+    "stop" : 1628263715433,
+    "duration" : 2101
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a7379a81c76c705",
+  "name" : "test_edit_settings_process",
+  "time" : {
+    "start" : 1628263725288,
+    "stop" : 1628263738042,
+    "duration" : 12754
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4edfc3dd4a05da36",
+  "name" : "test_delete_post_process",
+  "time" : {
+    "start" : 1628263805021,
+    "stop" : 1628263816366,
+    "duration" : 11345
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
