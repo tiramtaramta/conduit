@@ -1,14 +1,12 @@
 from selenium import webdriver
-import time
-import csv
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.wait import WebDriverWait
-import math
 from selenium.webdriver.common.by import By
 import os
+import time
+import csv
+from webdriver_manager.chrome import ChromeDriverManager
+import math
 from basic_function import basic_login, find_element
 
 
@@ -65,7 +63,6 @@ class TestConduit(object):
         # Sikeres regisztrációs értesítési ablak szövegének ellenőrzése
         swal_text = find_element(self.driver, By.CLASS_NAME, "swal-text")
         assert swal_text.text == "Your registration was successful!"
-        # assert self.driver.find_element_by_class_name("swal-text").text == "Your registration was successful!"
 
         # time.sleep(2)
 
