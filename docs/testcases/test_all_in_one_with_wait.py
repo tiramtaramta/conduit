@@ -68,9 +68,11 @@ class TestConduit(object):
         close_btn = find_element(self.driver, By.XPATH, "//button[normalize-space()='OK']")
         close_btn.click()
 
+        time.sleep(1)
+
         # Bejelentkezés tényének ellenőrzése
-        username_check = find_element(self.driver, By.XPATH, "//a[starts-with(@href, '#/@')]")
-        assert username_check.text == user_input_data[
+        username_check = self.driver.find_element_by_xpath("//a[starts-with(@href, '#/@')]").text
+        assert username_check == user_input_data[
             0], f"Test Failed: Username did not match expected ({user_input_data[0]})."
 
     # -------- A004, TC-0010 Bejelentkezés helyes adatokkal --------
@@ -168,24 +170,29 @@ class TestConduit(object):
             for row in csv_reader:
                 new_article_data = row
 
-        # Beviteli űrlap feltöltése
-        article = find_element(self.driver, By.XPATH, "//input[starts-with(@placeholder,'Article')]")
-        what = find_element(self.driver, By.XPATH, "//input[starts-with(@placeholder,'What')]")
-        write = find_element(self.driver, By.XPATH, "//textarea[starts-with(@placeholder,'Write')]")
-        tags = find_element(self.driver, By.XPATH, "//input[@placeholder='Enter tags']")
-        button = find_element(self.driver, By.CSS_SELECTOR, "button[type='submit']")
+        time.sleep(2)
 
-        article.send_keys(new_article_data[0])
-        what.send_keys(new_article_data[1])
-        write.send_keys(new_article_data[2])
-        tags.send_keys(new_article_data[3])
-        button.click()
+        # Beviteli űrlap feltöltése
+        self.driver.find_element_by_xpath("//input[starts-with(@placeholder,'Article')]").send_keys(
+            new_article_data[0])
+        self.driver.find_element_by_xpath("//input[starts-with(@placeholder,'What')]").send_keys(
+            new_article_data[1])
+        self.driver.find_element_by_xpath("//textarea[starts-with(@placeholder,'Write')]").send_keys(
+            new_article_data[2])
+        self.driver.find_element_by_xpath("//input[@placeholder='Enter tags']").send_keys(new_article_data[3])
+
+        time.sleep(1)
+
+        self.driver.find_element_by_css_selector("button[type='submit']").click()
+
+        time.sleep(2)
 
         # Bejegyzés létrejöttének ellenőrzése
-        title = find_element(self.driver, By.TAG_NAME, "h1")
-        title_check = title.text
+        title_check = self.driver.find_element_by_tag_name("h1").text
         assert title_check == new_article_data[
             0], f"Test Failed: Content title did not match expected ({new_article_data[0]})."
+
+        time.sleep(2)
 
     # -------- A006, TC-0015 Új adatbevitel helyes adatokkal (sorozatos) --------
     def test_create_posts_process(self):
@@ -198,23 +205,29 @@ class TestConduit(object):
                     new_article_data = row
 
                     # Beviteli űrlap feltöltése
-                    article = find_element(self.driver, By.XPATH, "//input[starts-with(@placeholder,'Article')]")
-                    what = find_element(self.driver, By.XPATH, "//input[starts-with(@placeholder,'What')]")
-                    write = find_element(self.driver, By.XPATH, "//textarea[starts-with(@placeholder,'Write')]")
-                    tags = find_element(self.driver, By.XPATH, "//input[@placeholder='Enter tags']")
-                    button = find_element(self.driver, By.CSS_SELECTOR, "button[type='submit']")
+                    self.driver.find_element_by_xpath("//a[@href='#/editor']").click()
+                    time.sleep(4)
+                    self.driver.find_element_by_xpath("//input[@placeholder='Article Title']").send_keys(
+                        new_article_data[0])
+                    self.driver.find_element_by_xpath("//input[starts-with(@placeholder,'What')]").send_keys(
+                        new_article_data[1])
+                    self.driver.find_element_by_xpath("//textarea[starts-with(@placeholder,'Write')]").send_keys(
+                        new_article_data[2])
+                    self.driver.find_element_by_xpath("//input[@placeholder='Enter tags']").send_keys(
+                        new_article_data[3])
 
-                    article.send_keys(new_article_data[0])
-                    what.send_keys(new_article_data[1])
-                    write.send_keys(new_article_data[2])
-                    tags.send_keys(new_article_data[3])
-                    button.click()
+                    time.sleep(1)
+
+                    self.driver.find_element_by_css_selector("button[type='submit']").click()
+
+                    time.sleep(2)
 
                     # Bejegyzés létrejöttének ellenőrzése
-                    title = find_element(self.driver, By.TAG_NAME, "h1")
-                    title_check = title.text
+                    title_check = self.driver.find_element_by_tag_name("h1").text
                     assert title_check == new_article_data[
                         0], f"Test Failed: Content title did not match expected ({new_article_data[0]})."
+
+                    time.sleep(4)
 
     # -------- A015, TC-0024 Saját poszt törlése --------
     def test_delete_post_process(self):
