@@ -1,0 +1,152 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "docs.testcases.test_all_in_one_with_wait",
+    "children" : [ {
+      "name" : "test_cookie_process",
+      "uid" : "bc8d054d26ca0eed",
+      "parentUid" : "59b3cf1c09299c28b4fe46ea2681d9d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628611893783,
+        "stop" : 1628611895928,
+        "duration" : 2145
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_registration_process",
+      "uid" : "4c904c7bdbcc1744",
+      "parentUid" : "59b3cf1c09299c28b4fe46ea2681d9d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628611896556,
+        "stop" : 1628611900887,
+        "duration" : 4331
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_login_process",
+      "uid" : "1dac3927d92c7b08",
+      "parentUid" : "59b3cf1c09299c28b4fe46ea2681d9d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628611902526,
+        "stop" : 1628611904456,
+        "duration" : 1930
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_edit_settings_process",
+      "uid" : "f58f0ccef43be3ef",
+      "parentUid" : "59b3cf1c09299c28b4fe46ea2681d9d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628611906087,
+        "stop" : 1628611918645,
+        "duration" : 12558
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_logout_process",
+      "uid" : "605eb338289e9344",
+      "parentUid" : "59b3cf1c09299c28b4fe46ea2681d9d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628611920268,
+        "stop" : 1628611925712,
+        "duration" : 5444
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_create_post",
+      "uid" : "f17587ad98de7f8a",
+      "parentUid" : "59b3cf1c09299c28b4fe46ea2681d9d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628611927323,
+        "stop" : 1628611942313,
+        "duration" : 14990
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_create_posts_process",
+      "uid" : "6060e3c6a7b0df51",
+      "parentUid" : "59b3cf1c09299c28b4fe46ea2681d9d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628611943980,
+        "stop" : 1628611986285,
+        "duration" : 42305
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_delete_post_process",
+      "uid" : "73dd8474f56bac3",
+      "parentUid" : "59b3cf1c09299c28b4fe46ea2681d9d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628611987919,
+        "stop" : 1628611997703,
+        "duration" : 9784
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_export_my_last_post",
+      "uid" : "be583ae0d82334b4",
+      "parentUid" : "59b3cf1c09299c28b4fe46ea2681d9d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628611999331,
+        "stop" : 1628612011872,
+        "duration" : 12541
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_global_feed_list",
+      "uid" : "1ade7301d5d45ce0",
+      "parentUid" : "59b3cf1c09299c28b4fe46ea2681d9d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628612012514,
+        "stop" : 1628612020134,
+        "duration" : 7620
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_global_feed_pagination",
+      "uid" : "9edc259c244e704f",
+      "parentUid" : "59b3cf1c09299c28b4fe46ea2681d9d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628612021767,
+        "stop" : 1628612031263,
+        "duration" : 9496
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "docs.testcases.test_all_in_one_with_wait"
+  } ],
+  "name" : "packages"
+}
