@@ -34,4 +34,4 @@ R015 felhasználói profil beállítások TC0034 Saját profil szerkesztése, k�
 				     TC0035 Saját profil szerkesztése, felhasználónév csere
 				     TC0036 Saját profil szerkesztése, emailcím csere
 R016 kommentelés TC-0032 Kommentelés
-R017 cookie kezelés TC-0037 Cookie kezelés elfogadása
+R017 cookie kezelés TC-0037 Cookie kezelés elfogadás
